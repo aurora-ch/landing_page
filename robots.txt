@@ -1,0 +1,18 @@
+# robots.txt for Aurora Website
+# https://myaurora.ch/robots.txt
+
+User-agent: *
+Allow: /
+Allow: /contact
+Allow: /legal
+Allow: /team
+Allow: /coming-soon
+
+# Disallow coming-soon from being indexed (optional - remove if you want it indexed)
+Disallow: /coming-soon
+
+# Sitemap location
+Sitemap: https://myaurora.ch/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1

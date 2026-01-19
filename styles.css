@@ -383,25 +383,22 @@ body {
     font-size: 0.75rem;
     font-weight: 500;
     color: var(--gray-600);
-    background: light-dark(
-        hsl(0 0% 100% / 0.3),
-        hsl(0 0% 0% / 0.3)
-    );
-    backdrop-filter: url(#glass-filter) blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 100px;
-    transition: all 0.3s var(--ease-smooth);
-    box-shadow:
-        0 0 2px 1px
-            light-dark(
-                color-mix(in oklch, canvasText, #0000 90%),
-                color-mix(in oklch, canvasText, #0000 75%)
-            )
-            inset,
-        0px 4px 16px rgba(17, 17, 26, 0.03);
     position: relative;
     overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s var(--ease-smooth);
 }
 
 /* Water ripple effect on badge hover */
@@ -424,6 +421,26 @@ body {
     opacity: 0;
     z-index: 0;
     pointer-events: none;
+}
+
+.badge::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .badge svg,
@@ -451,10 +468,12 @@ body {
 }
 
 .badge:hover {
-    border-color: var(--aurora-cyan);
     box-shadow:
-        0 0 2px 1px rgba(0, 212, 255, 0.2) inset,
-        0px 8px 24px rgba(0, 212, 255, 0.15);
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
     transform: translateY(-2px);
 }
 
@@ -797,23 +816,42 @@ body {
 
 .btn-secondary {
     color: var(--gray-700);
-    background: light-dark(
-        hsl(0 0% 100% / 0.3),
-        hsl(0 0% 0% / 0.3)
-    );
-    backdrop-filter: url(#glass-filter) blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow:
-        0 0 2px 1px
-            light-dark(
-                color-mix(in oklch, canvasText, #0000 90%),
-                color-mix(in oklch, canvasText, #0000 75%)
-            )
-            inset,
-        0px 4px 16px rgba(17, 17, 26, 0.03);
     position: relative;
     overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Gradient border effect */
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: 0;
 }
 
 /* Water loop effect on button hover */
@@ -872,16 +910,14 @@ body {
 }
 
 .btn-secondary:hover {
-    background: light-dark(
-        hsl(0 0% 100% / 0.4),
-        hsl(0 0% 0% / 0.4)
-    );
-    border-color: var(--aurora-cyan);
     color: var(--gray-900);
     transform: translateY(-2px);
     box-shadow:
-        0 0 2px 1px rgba(0, 212, 255, 0.2) inset,
-        0px 8px 24px rgba(0, 212, 255, 0.15);
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .btn-outline {
@@ -1240,26 +1276,23 @@ body {
     font-weight: 500;
     font-family: var(--font-body);
     color: var(--gray-600);
-    background: light-dark(
-        hsl(0 0% 100% / 0.3),
-        hsl(0 0% 0% / 0.3)
-    );
-    backdrop-filter: url(#glass-filter) blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: all 0.3s var(--ease-smooth);
-    box-shadow:
-        0 0 2px 1px
-            light-dark(
-                color-mix(in oklch, canvasText, #0000 90%),
-                color-mix(in oklch, canvasText, #0000 75%)
-            )
-            inset,
-        0px 4px 16px rgba(17, 17, 26, 0.03);
     position: relative;
     overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 100px;
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.3s var(--ease-smooth);
 }
 
 /* Water wave effect on tab button hover */
@@ -1308,14 +1341,33 @@ body {
 }
 
 .tab-btn:hover {
-    background: light-dark(
-        hsl(0 0% 100% / 0.5),
-        hsl(0 0% 0% / 0.5)
-    );
     color: var(--gray-800);
     box-shadow:
-        0 0 2px 1px rgba(0, 212, 255, 0.1) inset,
-        0px 8px 24px rgba(0, 212, 255, 0.1);
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
 }
 
 .tab-btn.active {
@@ -1404,16 +1456,52 @@ body {
     display: flex;
     gap: 1rem;
     padding: 1.5rem;
-    background: var(--gray-50);
+    position: relative;
+    overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 16px;
-    border: 1px solid var(--gray-100);
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
     transition: all 0.3s var(--ease-smooth);
 }
 
+.feature-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: 0;
+}
+
 .feature-card:hover {
-    background: var(--white);
-    border-color: rgba(0, 212, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);
+    box-shadow:
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
     transform: translateY(-4px);
 }
 
@@ -1423,6 +1511,8 @@ body {
     height: 48px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
     justify-content: center;
     background: var(--white);
     border-radius: 12px;
@@ -1438,6 +1528,11 @@ body {
     background: var(--aurora-gradient);
     color: var(--white);
     box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
+}
+
+.feature-text {
+    position: relative;
+    z-index: 1;
 }
 
 .feature-text h4 {
@@ -1500,16 +1595,55 @@ body {
     justify-content: center;
     width: 80px;
     height: 80px;
-    background: rgba(0, 212, 255, 0.08);
-    border-radius: 20px;
-    margin-bottom: 1.5rem;
     position: relative;
+    overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
+    
+    margin-bottom: 1.5rem;
     z-index: 1;
     transition: all 0.4s var(--ease-smooth);
 }
 
+.visual-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: 0;
+}
+
 .visual-card:hover .visual-icon-wrapper {
-    background: rgba(0, 212, 255, 0.15);
+    box-shadow:
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
     transform: scale(1.05);
 }
 
@@ -1600,34 +1734,53 @@ body {
 }
 
 .cta-card {
-    background: light-dark(
-        hsl(0 0% 100% / 0.4),
-        hsl(0 0% 0% / 0.4)
-    );
-    backdrop-filter: url(#glass-filter) blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    
+    /* Subtle border with gradient */
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 24px;
+    box-shadow:
+        0 0 2px 1px rgba(255, 255, 255, 0.3) inset,
+        0px 4px 16px rgba(0, 0, 0, 0.08),
+        0px 8px 24px rgba(0, 0, 0, 0.06);
+    
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow:
-        0 0 2px 1px
-            light-dark(
-                color-mix(in oklch, canvasText, #0000 90%),
-                color-mix(in oklch, canvasText, #0000 75%)
-            )
-            inset,
-        0px 4px 16px rgba(17, 17, 26, 0.03),
-        0px 8px 24px rgba(17, 17, 26, 0.03);
     transition: all 0.4s var(--ease-smooth);
-    position: relative;
-    overflow: hidden;
+}
+
+/* Gradient border effect */
+.cta-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.4) 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: 0;
 }
 
 /* Water loop effect on CTA card hover */
-.cta-card::before {
+.cta-card::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -1656,7 +1809,7 @@ body {
     z-index: 1;
 }
 
-.cta-card:hover::before {
+.cta-card:hover::after {
     width: 600px;
     height: 600px;
     opacity: 1;
@@ -1685,10 +1838,11 @@ body {
 .cta-card:hover {
     transform: translateY(-6px);
     box-shadow:
-        0 0 2px 1px rgba(0, 212, 255, 0.2) inset,
-        0px 8px 24px rgba(0, 212, 255, 0.15),
-        0px 16px 48px rgba(0, 212, 255, 0.1);
-    border-color: rgba(0, 212, 255, 0.3);
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .cta-card h3 {
@@ -1723,14 +1877,20 @@ body {
 }
 
 .cta-card-outline {
-    background: rgba(0, 212, 255, 0.03);
-    border: 1.5px solid rgba(0, 212, 255, 0.15);
+    /* Liquid Glass Effect - Matching nav-glass */
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: url(#glass-filter) blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .cta-card-outline:hover {
-    background: rgba(0, 212, 255, 0.06);
-    border-color: rgba(0, 212, 255, 0.3);
-    box-shadow: 0 20px 48px rgba(0, 212, 255, 0.1);
+    box-shadow:
+        0 0 0 1px rgba(0, 212, 255, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 24px rgba(0, 212, 255, 0.1),
+        0 0 40px rgba(0, 212, 255, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .cta-card-outline .btn-outline {

@@ -11,8 +11,37 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="light dark">
     <title>Aurora | Enterprise AI Solutions</title>
     <meta name="description" content="Transform your enterprise with Aurora's AI-powered solutions. Swiss precision meets intelligent automation.">
+    <meta name="keywords" content="enterprise AI, AI solutions, voice AI, API integration, customer support AI, Swiss software, GDPR compliant, EU AI Act, automation, intelligent workflows">
+    <meta name="author" content="Aurora SA">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://myaurora.ch/">
+    <link rel="sitemap" type="application/xml" href="https://myaurora.ch/sitemap.xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myaurora.ch/">
+    <meta property="og:title" content="Aurora | Enterprise AI Solutions">
+    <meta property="og:description" content="Transform your enterprise with Aurora's AI-powered solutions. Swiss precision meets intelligent automation.">
+    <meta property="og:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Aurora">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://myaurora.ch/">
+    <meta name="twitter:title" content="Aurora | Enterprise AI Solutions">
+    <meta name="twitter:description" content="Transform your enterprise with Aurora's AI-powered solutions. Swiss precision meets intelligent automation.">
+    <meta name="twitter:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
+    <meta name="twitter:site" content="@MyAuroraSA">
+    <meta name="twitter:creator" content="@MyAuroraSA">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_B copy/favicon-32x32.png">
@@ -25,6 +54,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://myaurora.ch/#organization",
+          "name": "Aurora SA",
+          "url": "https://myaurora.ch",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://myaurora.ch/Logo%20C%20+%20B%20copy.png",
+            "width": 400,
+            "height": 100
+          },
+          "sameAs": [
+            "https://linkedin.com/company/myaurora",
+            "https://x.com/MyAuroraSA"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@myaurora.ch",
+            "contactType": "Customer Service"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CH"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://myaurora.ch/#website",
+          "url": "https://myaurora.ch",
+          "name": "Aurora",
+          "description": "Enterprise AI Solutions by Aurora",
+          "publisher": {
+            "@id": "https://myaurora.ch/#organization"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://myaurora.ch/#webpage",
+          "url": "https://myaurora.ch",
+          "name": "Aurora | Enterprise AI Solutions",
+          "isPartOf": {
+            "@id": "https://myaurora.ch/#website"
+          },
+          "about": {
+            "@id": "https://myaurora.ch/#organization"
+          },
+          "description": "Transform your enterprise with Aurora's AI-powered solutions. Swiss precision meets intelligent automation.",
+          "breadcrumb": {
+            "@id": "https://myaurora.ch/#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://myaurora.ch/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://myaurora.ch"
+            }
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Aurora AI Platform",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "description": "Enterprise AI platform with voice AI, API integration, and customer support solutions"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- SVG Filter for Liquid Glass Effect -->
@@ -106,7 +220,7 @@
         <div class="nav-container">
             <div class="nav-glass nav-glass-logo">
                 <a href="/" class="nav-logo">
-                    <img src="Logo C + B copy.png" alt="Aurora">
+                    <img src="Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo">
                 </a>
             </div>
 
@@ -540,7 +654,7 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <img src="Logo C + B copy.png" alt="Aurora" class="footer-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo" class="footer-logo">
                     <p class="footer-tagline">Reimagine your enterprise with Aurora</p>
                 </div>
 
@@ -553,9 +667,9 @@
                     </div>
                     <div class="footer-col">
                         <h4>Resources</h4>
-                        <a href="/coming-soon#documentation">Documentation</a>
-                        <a href="/coming-soon#api">API Reference</a>
-                        <a href="/coming-soon#support">Support</a>
+                        <a href="/coming-soon?page=documentation">Documentation</a>
+                        <a href="/coming-soon?page=api">API Reference</a>
+                        <a href="/coming-soon?page=support">Support</a>
                     </div>
                     <div class="footer-col">
                         <h4>Legal</h4>

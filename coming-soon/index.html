@@ -13,6 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon | Aurora</title>
     <meta name="description" content="This feature is coming soon. Stay tuned for updates from Aurora.">
+    <meta name="keywords" content="coming soon, Aurora updates, new features, Aurora roadmap">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://myaurora.ch/coming-soon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myaurora.ch/coming-soon">
+    <meta property="og:title" content="Coming Soon | Aurora">
+    <meta property="og:description" content="This feature is coming soon. Stay tuned for updates from Aurora.">
+    <meta property="og:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
+    <meta property="og:site_name" content="Aurora">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://myaurora.ch/coming-soon">
+    <meta name="twitter:title" content="Coming Soon | Aurora">
+    <meta name="twitter:description" content="This feature is coming soon. Stay tuned for updates from Aurora.">
+    <meta name="twitter:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_B copy/favicon-32x32.png">
@@ -26,6 +44,34 @@
 
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="coming-soon.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Coming Soon | Aurora",
+      "description": "This feature is coming soon. Stay tuned for updates from Aurora.",
+      "url": "https://myaurora.ch/coming-soon",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://myaurora.ch"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Coming Soon",
+            "item": "https://myaurora.ch/coming-soon"
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
     
@@ -103,7 +149,7 @@
         <div class="nav-container">
             <div class="nav-glass nav-glass-logo">
                 <a href="/" class="nav-logo">
-                    <img src="../Logo C + B copy.png" alt="Aurora">
+                    <img src="../Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo">
                 </a>
             </div>
 
@@ -244,7 +290,7 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <img src="Logo C + B copy.png" alt="Aurora" class="footer-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo" class="footer-logo">
                     <p class="footer-tagline">Reimagine your enterprise with Aurora</p>
                 </div>
 
@@ -257,9 +303,9 @@
                     </div>
                     <div class="footer-col">
                         <h4>Resources</h4>
-                        <a href="/coming-soon#documentation">Documentation</a>
-                        <a href="/coming-soon#api">API Reference</a>
-                        <a href="/coming-soon#support">Support</a>
+                        <a href="/coming-soon?page=documentation">Documentation</a>
+                        <a href="/coming-soon?page=api">API Reference</a>
+                        <a href="/coming-soon?page=support">Support</a>
                     </div>
                     <div class="footer-col">
                         <h4>Legal</h4>
@@ -352,8 +398,8 @@
                     descEl.textContent = config.description;
                     document.title = `${config.title} - Coming Soon | Aurora`;
 
-                    // Update URL with simple hash
-                    history.pushState({page: page}, '', `#${page}`);
+                    // Update URL without hash
+                    history.pushState({page: page}, '', `/coming-soon?page=${page}`);
                 } else {
                     titleEl.innerHTML = defaultContent.title;
                     descEl.textContent = defaultContent.description;
@@ -384,31 +430,14 @@
 
         // Handle page load
         document.addEventListener('DOMContentLoaded', function() {
-            // Scroll to top on initial load (unless there's a hash)
-            if (!window.location.hash) {
-                window.scrollTo(0, 0);
-            }
+            // Scroll to top on initial load
+            window.scrollTo(0, 0);
 
             const urlParams = new URLSearchParams(window.location.search);
             const page = urlParams.get('page');
-            const hash = window.location.hash.substring(1);
 
-            // Handle hash-based navigation (simpler URLs)
-            if (hash && pageConfig[hash]) {
-                const config = pageConfig[hash];
-                document.getElementById('pageTitle').innerHTML = `<span class="gradient-text">${config.title}</span> <span>is coming soon</span>`;
-                document.getElementById('pageDescription').textContent = config.description;
-                document.title = `${config.title} - Coming Soon | Aurora`;
-
-                const activeCard = document.querySelector(`.resource-card[data-page="${hash}"]`);
-                if (activeCard) {
-                    activeCard.classList.add('active');
-                    // Scroll to card only if hash is present
-                    setTimeout(() => {
-                        activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }, 300);
-                }
-            } else if (page && pageConfig[page]) {
+            // Handle query parameter-based navigation
+            if (page && pageConfig[page]) {
                 // Fallback to query parameter
                 const config = pageConfig[page];
                 document.getElementById('pageTitle').innerHTML = `<span class="gradient-text">${config.title}</span> <span>is coming soon</span>`;
@@ -431,14 +460,13 @@
                 card.addEventListener('click', function() {
                     const page = this.dataset.page;
                     updatePageContent(page);
-                    // Update URL with simple hash
-                    history.pushState({page: page}, '', `#${page}`);
+                    // Update URL without hash
+                    history.pushState({page: page}, '', `/coming-soon?page=${page}`);
                 });
             });
 
             // Handle browser back/forward
             window.addEventListener('popstate', function(e) {
-                const hash = window.location.hash.substring(1);
                 const urlParams = new URLSearchParams(window.location.search);
                 const page = urlParams.get('page');
 
@@ -446,20 +474,7 @@
                 const descEl = document.getElementById('pageDescription');
                 const cards = document.querySelectorAll('.resource-card');
 
-                if (hash && pageConfig[hash]) {
-                    const config = pageConfig[hash];
-                    titleEl.innerHTML = `<span class="gradient-text">${config.title}</span> <span>is coming soon</span>`;
-                    descEl.textContent = config.description;
-                    document.title = `${config.title} - Coming Soon | Aurora`;
-                    
-                    cards.forEach(card => {
-                        card.classList.remove('active');
-                        if (card.dataset.page === hash) {
-                            card.classList.add('active');
-                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        }
-                    });
-                } else if (page && pageConfig[page]) {
+                if (page && pageConfig[page]) {
                     const config = pageConfig[page];
                     titleEl.innerHTML = `<span class="gradient-text">${config.title}</span> <span>is coming soon</span>`;
                     descEl.textContent = config.description;
@@ -482,25 +497,17 @@
                 }
             });
 
-            // Handle hash changes (for direct hash navigation)
-            window.addEventListener('hashchange', function() {
+            // Remove any hash from URL on load
+            if (window.location.hash) {
                 const hash = window.location.hash.substring(1);
-                if (hash && pageConfig[hash]) {
-                    updatePageContent(hash);
+                if (pageConfig[hash]) {
+                    // Redirect to query parameter instead of hash
+                    window.location.replace(`/coming-soon?page=${hash}`);
                 } else {
-                    const titleEl = document.getElementById('pageTitle');
-                    const descEl = document.getElementById('pageDescription');
-                    const cards = document.querySelectorAll('.resource-card');
-                    
-                    titleEl.innerHTML = defaultContent.title;
-                    descEl.textContent = defaultContent.description;
-                    document.title = 'Coming Soon | Aurora';
-                    
-                    cards.forEach(card => {
-                        card.classList.remove('active');
-                    });
+                    // Remove hash if it doesn't match any page
+                    window.history.replaceState({}, '', '/coming-soon');
                 }
-            });
+            }
         });
     </script>
 </body>
