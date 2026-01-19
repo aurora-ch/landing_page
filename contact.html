@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PDWV4LSG');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aurora</title>
+    <meta name="description" content="Get in touch with Aurora. Contact our expert team for AI solutions, partnerships, or support.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_B copy/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_B copy/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="favicon_B copy/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDWV4LSG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-glass nav-glass-logo">
+                <a href="index.html" class="nav-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora">
+                </a>
+            </div>
+
+            <div class="nav-glass nav-glass-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+
+            <a href="contact.html" class="nav-cta">
+                <span>Get in Touch</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg"></div>
+        <div class="container">
+            <h1 class="contact-title" data-anim>Contact us</h1>
+            <p class="contact-subtitle" data-anim>Have questions? We're here to help you transform your enterprise with AI.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-wrapper" data-anim>
+                <form id="contact-form" class="contact-form" action="mailto:hello@myaurora.ch" method="POST" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First name*</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name*</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobTitle">Job title*</label>
+                        <input type="text" id="jobTitle" name="jobTitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country*</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="IT">Italy</option>
+                            <option value="AT">Austria</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Business email address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industry">Industry*</label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select an industry</option>
+                            <option value="banking">Banking & Finance</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="retail">Retail</option>
+                            <option value="technology">Technology</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="telecom">Telecommunications</option>
+                            <option value="government">Government</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry">I am trying to reach...*</label>
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="">Select an option</option>
+                            <option value="sales">Sales Team</option>
+                            <option value="support">Customer Support</option>
+                            <option value="partnerships">Partnership Team</option>
+                            <option value="press">Press & Media</option>
+                            <option value="careers">Careers</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Product of Interest*</label>
+                        <select id="product" name="product" required>
+                            <option value="">Select a product</option>
+                            <option value="voice-ai">Voice AI</option>
+                            <option value="api">API Platform</option>
+                            <option value="customer-support">Customer Support AI</option>
+                            <option value="enterprise">Enterprise Solutions</option>
+                            <option value="custom">Custom Integration</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Anything else you would like to tell us?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project or requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Submit</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Reach Us -->
+    <section class="reach-section">
+        <div class="container">
+            <h2 class="section-title" data-anim>Ways to reach us</h2>
+            <p class="section-description" data-anim>Have questions or need personalized assistance? We're here to help so reach out to our team.</p>
+
+            <div class="reach-grid">
+                <div class="reach-card reach-card-featured" data-anim>
+                    <div class="reach-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="reach-badge">Talk to an expert</div>
+                    <h3>Contact our expert team</h3>
+                    <p>Explore Aurora's AI Platform and solutions, or create an account instantly to start reimagining your business with AI.</p>
+                    <a href="mailto:hello@myaurora.ch" class="btn btn-primary">
+                        <span>Talk to an Expert</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="reach-card" data-anim>
+                    <div class="reach-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Press + Media</h3>
+                    <p>Contact our press and media team.</p>
+                    <a href="mailto:hello@myaurora.ch" class="btn btn-secondary">
+                        <span>Submit an Enquiry</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="reach-card" data-anim>
+                    <div class="reach-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M23 21V19C22.9986 17.177 21.765 15.5857 20 15.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C17.7699 3.58317 19.0078 5.17799 19.0078 7.005C19.0078 8.83201 17.7699 10.4268 16 10.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Partnership team</h3>
+                    <p>Contact our partnership team and they can guide you through how partnerships can bring you value.</p>
+                    <div class="reach-card-buttons">
+                        <a href="mailto:hello@myaurora.ch" class="btn btn-primary btn-sm">
+                            <span>Become a Partner</span>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-text" data-anim>
+                    <h2 class="section-title">More detailed support</h2>
+                    <p class="section-description">If you are a current customer, or a future one, get tailored advice and support here.</p>
+                </div>
+
+                <div class="support-cards">
+                    <div class="support-card" data-anim>
+                        <div class="support-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M9.09 9C9.57 7.82 10.79 7 12 7C13.66 7 15 8.34 15 10C15 11.66 13.66 13 12 13V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="12" cy="17" r="1" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Still need support?</h3>
+                        <p>Get in touch with our Customer Success team. Fill out the form and we'll get back to you.</p>
+                        <a href="mailto:hello@myaurora.ch" class="link-arrow">
+                            <span>Get Support</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="support-card" data-anim>
+                        <div class="support-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Submit an RFP/RFI</h3>
+                        <p>Get a personalized quote tailored to your needs, upload your RFP below.</p>
+                        <a href="mailto:hello@myaurora.ch" class="link-arrow">
+                            <span>Submit RFP</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header" data-anim>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Everything you need to know about the product & billing.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item" data-anim>
+                    <button class="faq-header-btn">
+                        <span>How many integrations does Aurora support?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <div>
+                            <p>Aurora supports seamless integration with over 100+ enterprise systems including Salesforce, SAP, Oracle, Microsoft 365, Slack, ServiceNow, and many more. Our API-first approach ensures compatibility with virtually any modern business application.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-anim>
+                    <button class="faq-header-btn">
+                        <span>Is it GDPR compliant?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <div>
+                            <p>Yes, Aurora is fully GDPR compliant. As a Swiss-made software company, we adhere to the strictest European data protection standards. All data processing occurs within EU/Swiss data centers, and we provide comprehensive data processing agreements for enterprise customers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-anim>
+                    <button class="faq-header-btn">
+                        <span>Will I be able to put my solutions on the marketplace right now?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <div>
+                            <p>Yes, once you've developed your solution using Aurora's platform, you can publish it to our marketplace. Our team will guide you through the certification process to ensure your solution meets our quality and security standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-anim>
+                    <button class="faq-header-btn">
+                        <span>Will I be able to have an exclusive marketplace for my organization?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <div>
+                            <p>Yes. We are building the Enterprise Portal, which will be exposed as limited availability soon. Please reach out to your success manager for further information about private marketplace deployment options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-anim>
+                    <button class="faq-header-btn">
+                        <span>Is it Customizable?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content">
+                        <div>
+                            <p>Absolutely. Aurora offers extensive customization options including custom AI model training, branded interfaces, workflow automation rules, and API extensions. Our enterprise tier includes dedicated support for custom development needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-aurora-bg"></div>
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card" data-anim>
+                    <h3>Start using an AI agent today</h3>
+                    <p>Browse and deploy our pre-built templates.</p>
+                    <a href="mailto:hello@myaurora.ch" class="btn btn-primary">
+                        <span>Request a Demo</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cta-card cta-card-outline" data-anim>
+                    <h3>Reimagine your business</h3>
+                    <p>Find out how Aurora can help you today.</p>
+                    <a href="mailto:hello@myaurora.ch" class="btn btn-outline">
+                        <span>Talk to an Expert</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="Logo C + B copy.png" alt="Aurora" class="footer-logo">
+                    <p class="footer-tagline">Reimagine your enterprise with Aurora</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="index.html">About Aurora</a>
+                        <a href="contact.html">Careers</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="coming soon/coming-soon.html#documentation">Documentation</a>
+                        <a href="coming soon/coming-soon.html#api">API Reference</a>
+                        <a href="coming soon/coming-soon.html#support">Support</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="legal.html#privacy-policy">Privacy Policy</a>
+                        <a href="legal.html#terms-of-service">Terms of Service</a>
+                        <a href="legal.html#cookie-policy">Cookie Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/myaurora" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/MyAuroraSA" target="_blank" rel="noopener" class="social-link" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurora. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span>Swiss Made</span>
+                    <span>GDPR Compliant</span>
+                    <span>EU AI Act Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner-container">
+            <div class="cookie-content">
+                <h4>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="8" cy="9" r="1.5" fill="currentColor"/>
+                        <circle cx="15" cy="8" r="1" fill="currentColor"/>
+                        <circle cx="10" cy="14" r="1" fill="currentColor"/>
+                        <circle cx="15" cy="13" r="1.5" fill="currentColor"/>
+                    </svg>
+                    We value your privacy
+                </h4>
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="legal.html#cookie-policy">Learn more</a></p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-btn-settings" id="cookieSettings">Settings</button>
+                <button class="cookie-btn cookie-btn-reject" id="cookieReject">Reject All</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieAccept"><span>Accept All</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div class="cookie-modal-overlay" id="cookieModalOverlay">
+        <div class="cookie-modal">
+            <div class="cookie-modal-header">
+                <h3>Cookie Preferences</h3>
+                <p>Manage your cookie settings below</p>
+            </div>
+            <div class="cookie-modal-body">
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <div class="cookie-category-info">
+                            <h4>Strictly Necessary</h4>
+                            <p>Essential for the website to function properly. Cannot be disabled.</p>
+                        </div>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" checked disabled>
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <div class="cookie-category-info">
+                            <h4>Analytics</h4>
+                            <p>Help us understand how visitors interact with our website.</p>
+                        </div>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="analyticsToggle">
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <div class="cookie-category-info">
+                            <h4>Functional</h4>
+                            <p>Enable enhanced functionality and personalization.</p>
+                        </div>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="functionalToggle">
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <div class="cookie-category-info">
+                            <h4>Marketing</h4>
+                            <p>Used to deliver relevant advertisements and track campaigns.</p>
+                        </div>
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="marketingToggle">
+                            <span class="cookie-toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button class="cookie-btn cookie-btn-reject" id="cookieModalReject">Reject All</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookieModalSave"><span>Save Preferences</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
