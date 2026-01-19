@@ -1,0 +1,59 @@
+# Aurora Website - Apache Configuration
+# Remove .html extensions and set default document
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Set default document
+DirectoryIndex index.html
+
+# Redirect .html URLs to clean URLs (external redirect for SEO)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{REQUEST_URI} ^(.+)\.html$
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Add .html extension internally if file exists (internal rewrite - URL stays clean)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Handle root domain - serve index.html
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ index.html [L]
+
+# Handle coming-soon page
+RewriteCond %{REQUEST_URI} ^/coming-soon/?$
+RewriteCond %{DOCUMENT_ROOT}/coming-soon.html -f
+RewriteRule ^coming-soon/?$ coming-soon.html [L]
+
+# Redirect trailing slashes (except for directories)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>

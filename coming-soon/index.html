@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PDWV4LSG');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6SJ6VEVW9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q6SJ6VEVW9');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon | Aurora</title>
@@ -27,10 +28,6 @@
     <link rel="stylesheet" href="coming-soon.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDWV4LSG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     
     <!-- SVG Filter for Liquid Glass Effect -->
     <svg class="glass-filter" xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;">
@@ -105,17 +102,17 @@
     <nav class="nav" id="navbar">
         <div class="nav-container">
             <div class="nav-glass nav-glass-logo">
-                <a href="../index.html" class="nav-logo">
+                <a href="/" class="nav-logo">
                     <img src="../Logo C + B copy.png" alt="Aurora">
                 </a>
             </div>
 
             <div class="nav-glass nav-glass-center">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="../contact.html" class="nav-link">Contact</a>
+                <a href="/" class="nav-link">Home</a>
+                <a href="/contact" class="nav-link">Contact</a>
             </div>
 
-            <a href="../contact.html" class="nav-cta">
+            <a href="/contact" class="nav-cta">
                 <span>Get in Touch</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -179,14 +176,14 @@
                 </p>
 
                 <div class="coming-soon-ctas" data-anim>
-                    <a href="../contact.html" class="btn btn-primary">
+                    <a href="/contact" class="btn btn-primary">
                         <span>Get Notified</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                             <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="../index.html" class="btn btn-secondary">
+                    <a href="/" class="btn btn-secondary">
                         <span>Back to Home</span>
                     </a>
                 </div>
@@ -247,28 +244,28 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <img src="../Logo C + B copy.png" alt="Aurora" class="footer-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora" class="footer-logo">
                     <p class="footer-tagline">Reimagine your enterprise with Aurora</p>
                 </div>
 
                 <div class="footer-links">
                     <div class="footer-col">
                         <h4>Company</h4>
-                        <a href="../index.html">About Aurora</a>
-                        <a href="../contact.html">Careers</a>
-                        <a href="../contact.html">Contact</a>
+                        <a href="/">About Aurora</a>
+                        <a href="/contact">Careers</a>
+                        <a href="/contact">Contact</a>
                     </div>
                     <div class="footer-col">
                         <h4>Resources</h4>
-                        <a href="coming-soon.html#documentation">Documentation</a>
-                        <a href="coming-soon.html#api">API Reference</a>
-                        <a href="coming-soon.html#support">Support</a>
+                        <a href="/coming-soon#documentation">Documentation</a>
+                        <a href="/coming-soon#api">API Reference</a>
+                        <a href="/coming-soon#support">Support</a>
                     </div>
                     <div class="footer-col">
                         <h4>Legal</h4>
-                        <a href="../legal.html">Privacy Policy</a>
-                        <a href="../legal.html">Terms of Service</a>
-                        <a href="../legal.html">Cookie Policy</a>
+                        <a href="/legal">Privacy Policy</a>
+                        <a href="/legal">Terms of Service</a>
+                        <a href="/legal">Cookie Policy</a>
                     </div>
                 </div>
 
@@ -301,6 +298,13 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script>
+        // Force scroll to top on page load (before DOM is ready)
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
     <script>
         // Page configuration
         const pageConfig = {
@@ -354,7 +358,7 @@
                     titleEl.innerHTML = defaultContent.title;
                     descEl.textContent = defaultContent.description;
                     document.title = 'Coming Soon | Aurora';
-                    history.pushState({}, '', window.location.pathname);
+                    history.pushState({}, '', '/coming-soon');
                 }
 
                 // Update active states
@@ -380,6 +384,11 @@
 
         // Handle page load
         document.addEventListener('DOMContentLoaded', function() {
+            // Scroll to top on initial load (unless there's a hash)
+            if (!window.location.hash) {
+                window.scrollTo(0, 0);
+            }
+
             const urlParams = new URLSearchParams(window.location.search);
             const page = urlParams.get('page');
             const hash = window.location.hash.substring(1);
@@ -394,6 +403,7 @@
                 const activeCard = document.querySelector(`.resource-card[data-page="${hash}"]`);
                 if (activeCard) {
                     activeCard.classList.add('active');
+                    // Scroll to card only if hash is present
                     setTimeout(() => {
                         activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }, 300);
@@ -409,6 +419,11 @@
                 if (activeCard) {
                     activeCard.classList.add('active');
                 }
+                // Scroll to top if no hash
+                window.scrollTo(0, 0);
+            } else {
+                // No hash or page parameter - ensure we're at the top
+                window.scrollTo(0, 0);
             }
 
             // Add click handlers to resource cards

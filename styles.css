@@ -209,11 +209,11 @@ body {
 
 /* Logo glass container - same size as nav links glass */
 .nav-glass-logo {
-    padding: 0.625rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .nav-glass-logo .nav-logo img {
-    height: 40px;
+    height: 36px;
 }
 
 .nav-glass::before {

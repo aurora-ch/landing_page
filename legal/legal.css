@@ -1,6 +1,15 @@
 /* Aurora AI - Legal Page Styles */
 
 /* ===========================================
+   LOADER - Hidden by default
+   =========================================== */
+.loader {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* ===========================================
    LEGAL HERO
    =========================================== */
 .legal-hero {

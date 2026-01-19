@@ -1,0 +1,17 @@
+{
+  "name": "aurora-landing-page",
+  "version": "1.0.0",
+  "description": "Aurora Enterprise AI Solutions Landing Page",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "aurora",
+    "landing-page",
+    "ai",
+    "enterprise"
+  ],
+  "author": "Aurora",
+  "license": "ISC"
+}
