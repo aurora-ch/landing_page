@@ -35,8 +35,16 @@ const server = http.createServer((req, res) => {
     const parsedUrl = url.parse(req.url, true);
     let pathname = parsedUrl.pathname;
 
-    // Remove query string and hash for file serving
+    // Remove query string and hash for file serving first
     pathname = pathname.split('?')[0].split('#')[0];
+
+    // Decode URL-encoded characters (like %20 for spaces)
+    try {
+        pathname = decodeURIComponent(pathname);
+    } catch (e) {
+        // If decoding fails, use the original pathname
+        console.warn('Failed to decode URL:', pathname);
+    }
 
     // Handle root
     if (pathname === '/') {
@@ -48,22 +56,23 @@ const server = http.createServer((req, res) => {
         pathname = pathname.slice(0, -1);
     }
 
-    // Build file path
-    let filePath = path.join(ROOT_DIR, pathname);
+    // Build file path - remove leading slash to ensure path.join works correctly
+    const cleanPath = pathname.startsWith('/') ? pathname.slice(1) : pathname;
+    let filePath = path.join(ROOT_DIR, cleanPath);
 
     // Check if path exists
     fs.stat(filePath, (err, stats) => {
         if (err) {
             // Path doesn't exist, try folder/index.html approach
             if (!pathname.endsWith('.html') && !pathname.endsWith('/')) {
-                const folderPath = path.join(ROOT_DIR, pathname, 'index.html');
+                const folderPath = path.join(ROOT_DIR, cleanPath, 'index.html');
                 fs.stat(folderPath, (err2, stats2) => {
                     if (!err2 && stats2.isFile()) {
                         // Serve the index.html from folder but keep URL clean
                         serveFile(folderPath, res);
                     } else {
                         // Try .html extension as fallback
-                        const htmlPath = filePath + '.html';
+                        const htmlPath = path.join(ROOT_DIR, cleanPath + '.html');
                         fs.stat(htmlPath, (err3, stats3) => {
                             if (!err3 && stats3.isFile()) {
                                 serveFile(htmlPath, res);
@@ -78,7 +87,7 @@ const server = http.createServer((req, res) => {
             }
         } else if (stats.isDirectory()) {
             // It's a directory, try to serve index.html from it
-            const indexPath = path.join(filePath, 'index.html');
+            const indexPath = path.join(ROOT_DIR, cleanPath, 'index.html');
             fs.stat(indexPath, (err2, stats2) => {
                 if (!err2 && stats2.isFile()) {
                     serveFile(indexPath, res);

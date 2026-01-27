@@ -1,158 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6SJ6VEVW9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Q6SJ6VEVW9');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Aurora</title>
     <meta name="description" content="Get in touch with Aurora. Contact our expert team for AI solutions, partnerships, or support.">
-    <meta name="keywords" content="contact Aurora, AI solutions contact, enterprise AI support, Aurora customer service, AI partnerships">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://myaurora.ch/contact">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://myaurora.ch/contact">
-    <meta property="og:title" content="Contact Us | Aurora">
-    <meta property="og:description" content="Get in touch with Aurora. Contact our expert team for AI solutions, partnerships, or support.">
-    <meta property="og:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
-    <meta property="og:site_name" content="Aurora">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="https://myaurora.ch/contact">
-    <meta name="twitter:title" content="Contact Us | Aurora">
-    <meta name="twitter:description" content="Get in touch with Aurora. Contact our expert team for AI solutions, partnerships, or support.">
-    <meta name="twitter:image" content="https://myaurora.ch/Logo%20C%20+%20B%20copy.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_B copy/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_B copy/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="../favicon_B copy/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_B copy/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_B copy/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="favicon_B copy/apple-touch-icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact Us | Aurora",
-      "description": "Get in touch with Aurora. Contact our expert team for AI solutions, partnerships, or support.",
-      "url": "https://myaurora.ch/contact",
-      "mainEntity": {
-        "@type": "Organization",
-        "name": "Aurora SA",
-        "email": "hello@myaurora.ch",
-        "url": "https://myaurora.ch",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "hello@myaurora.ch",
-          "contactType": "Customer Service",
-          "availableLanguage": "English"
-        }
-      }
-    }
-    </script>
 </head>
 <body>
-    <!-- SVG Filter for Liquid Glass Effect -->
-    <svg class="glass-filter" xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0;">
-        <defs>
-            <filter id="glass-filter" color-interpolation-filters="sRGB">
-                <feImage
-                    x="0"
-                    y="0"
-                    width="100%"
-                    height="100%"
-                    result="map"
-                ></feImage>
-                <feDisplacementMap
-                    in="SourceGraphic"
-                    in2="map"
-                    id="redchannel"
-                    xChannelSelector="R"
-                    yChannelSelector="G"
-                    result="dispRed"
-                />
-                <feColorMatrix
-                    in="dispRed"
-                    type="matrix"
-                    values="1 0 0 0 0
-                            0 0 0 0 0
-                            0 0 0 0 0
-                            0 0 0 1 0"
-                    result="red"
-                />
-                <feDisplacementMap
-                    in="SourceGraphic"
-                    in2="map"
-                    id="greenchannel"
-                    xChannelSelector="R"
-                    yChannelSelector="G"
-                    result="dispGreen"
-                />
-                <feColorMatrix
-                    in="dispGreen"
-                    type="matrix"
-                    values="0 0 0 0 0
-                            0 1 0 0 0
-                            0 0 0 0 0
-                            0 0 0 1 0"
-                    result="green"
-                />
-                <feDisplacementMap
-                    in="SourceGraphic"
-                    in2="map"
-                    id="bluechannel"
-                    xChannelSelector="R"
-                    yChannelSelector="G"
-                    result="dispBlue"
-                />
-                <feColorMatrix
-                    in="dispBlue"
-                    type="matrix"
-                    values="0 0 0 0 0
-                            0 0 0 0 0
-                            0 0 1 0 0
-                            0 0 0 1 0"
-                    result="blue"
-                />
-                <feBlend in="red" in2="green" mode="screen" result="rg" />
-                <feBlend in="rg" in2="blue" mode="screen" result="output" />
-                <feGaussianBlur in="output" stdDeviation="0.7" />
-            </filter>
-        </defs>
-    </svg>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="Logo C + B copy.png" alt="Aurora">
+            </div>
+            <div class="loader-aurora">
+                <div class="aurora-wave"></div>
+                <div class="aurora-wave"></div>
+                <div class="aurora-wave"></div>
+            </div>
+            <div class="loader-text">Loading Experience</div>
+        </div>
+    </div>
 
     <!-- Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
             <div class="nav-glass nav-glass-logo">
-                <a href="/" class="nav-logo">
-                    <img src="../Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo">
+                <a href="index.html" class="nav-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora">
                 </a>
             </div>
 
             <div class="nav-glass nav-glass-center">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/contact" class="nav-link active">Contact</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
             </div>
 
-            <a href="/contact" class="nav-cta">
+            <a href="contact.html" class="nav-cta">
                 <span>Get in Touch</span>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -174,7 +71,7 @@
     <section class="contact-form-section">
         <div class="container">
             <div class="contact-form-wrapper" data-anim>
-                <form id="contact-form" class="contact-form" method="POST">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/hello@myaurora.ch" method="POST">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="firstName">First name*</label>
@@ -292,10 +189,8 @@
 
             <div class="reach-grid">
                 <div class="reach-card reach-card-featured" data-anim>
-                    <div class="reach-card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7292C21.7209 20.9841 21.5573 21.2126 21.352 21.4C21.1467 21.5874 20.9046 21.7292 20.6407 21.8157C20.3768 21.9022 20.0973 21.9311 19.82 21.9C16.7428 21.5856 13.787 20.5341 11.19 18.81C8.77382 17.2408 6.72533 15.0079 5.21 12.31C3.57984 9.36138 2.50325 6.10074 2.05 2.72C2.01962 2.44348 2.04826 2.16347 2.13421 1.89933C2.22016 1.63519 2.36131 1.39297 2.54824 1.18764C2.73517 0.982307 2.96334 0.81888 3.218 0.707999C3.47267 0.597119 3.74819 0.540527 4.02667 0.541999H7.02667C7.49524 0.541315 7.94939 0.712999 8.3 1.02C8.65061 1.327 8.87185 1.74733 8.92 2.2L9.61 6.18C9.65622 6.62519 9.55519 7.07159 9.32167 7.45667C9.08815 7.84174 8.73385 8.14464 8.31 8.32L6.75 8.86C8.04714 11.1273 9.87266 13.0529 12.14 14.35L12.68 12.79C12.8554 12.3662 13.1583 12.0119 13.5433 11.7784C13.9284 11.5449 14.3748 11.4438 14.82 11.49L18.8 12.18C19.2527 12.2282 19.673 12.4494 19.98 12.8C20.287 13.1506 20.4587 13.6048 20.458 14.0733L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <div class="reach-icon-wrapper">
+                        <img src="user-at-phone copy.png" alt="Expert" class="reach-icon">
                     </div>
                     <div class="reach-badge">Talk to an expert</div>
                     <h3>Contact our expert team</h3>
@@ -336,12 +231,20 @@
                     </div>
                     <h3>Partnership team</h3>
                     <p>Contact our partnership team and they can guide you through how partnerships can bring you value.</p>
-                    <a href="mailto:partners@myaurora.ch" class="btn btn-primary">
-                        <span>Become a Partner</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
+                    <div class="reach-card-buttons">
+                        <a href="mailto:partners@myaurora.ch" class="btn btn-primary btn-sm">
+                            <span>Become a Partner</span>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-sm">
+                            <span>Partner Program</span>
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -514,28 +417,28 @@
         <div class="container">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <img src="../Logo C + B copy.png" alt="Aurora - Enterprise AI Solutions Logo" class="footer-logo">
+                    <img src="Logo C + B copy.png" alt="Aurora" class="footer-logo">
                     <p class="footer-tagline">Reimagine your enterprise with Aurora</p>
                 </div>
 
                 <div class="footer-links">
                     <div class="footer-col">
                         <h4>Company</h4>
-                        <a href="/coming-soon?page=about">About Aurora</a>
-                        <a href="/coming-soon?page=careers">Careers</a>
-                        <a href="/contact">Contact</a>
+                        <a href="coming-soon.html?page=about">About Aurora</a>
+                        <a href="coming-soon.html?page=careers">Careers</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                     <div class="footer-col">
                         <h4>Resources</h4>
-                        <a href="/coming-soon?page=documentation">Documentation</a>
-                        <a href="/coming-soon?page=api">API Reference</a>
-                        <a href="/coming-soon?page=support">Support</a>
+                        <a href="coming-soon.html?page=documentation">Documentation</a>
+                        <a href="coming-soon.html?page=api">API Reference</a>
+                        <a href="coming-soon.html?page=support">Support</a>
                     </div>
                     <div class="footer-col">
                         <h4>Legal</h4>
-                        <a href="/legal#privacy-policy">Privacy Policy</a>
-                        <a href="/legal#terms-of-service">Terms of Service</a>
-                        <a href="/legal#cookie-policy">Cookie Policy</a>
+                        <a href="legal.html#privacy-policy">Privacy Policy</a>
+                        <a href="legal.html#terms-of-service">Terms of Service</a>
+                        <a href="legal.html#cookie-policy">Cookie Policy</a>
                     </div>
                 </div>
 
@@ -581,7 +484,7 @@
                     </svg>
                     We value your privacy
                 </h4>
-                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="/legal#cookie-policy">Learn more</a></p>
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="legal.html#cookie-policy">Learn more</a></p>
             </div>
             <div class="cookie-actions">
                 <button class="cookie-btn cookie-btn-settings" id="cookieSettings">Settings</button>
@@ -655,9 +558,9 @@
         </div>
     </div>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
     <script>
-        // Contact Form Handling with Formspree.io
+        // Contact Form Handling
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('contact-form');
             const successOverlay = document.getElementById('formSuccess');
@@ -667,14 +570,14 @@
                 form.addEventListener('submit', async function(e) {
                     e.preventDefault();
 
-                    // Add loading state with animation
+                    // Add loading state
                     form.classList.add('loading');
 
                     // Collect form data
                     const formData = new FormData(form);
 
                     try {
-                        // Send to Formspree.io
+                        // Send to Formspree (or your preferred service)
                         const response = await fetch('https://formspree.io/f/xykwvgwa', {
                             method: 'POST',
                             body: formData,
@@ -684,15 +587,13 @@
                         });
 
                         if (response.ok) {
-                            // Show success overlay with animation
+                            // Show success overlay
                             successOverlay.classList.add('active');
                             form.reset();
                         } else {
-                            const data = await response.json();
-                            throw new Error(data.error || 'Form submission failed');
+                            throw new Error('Form submission failed');
                         }
                     } catch (error) {
-                        console.error('Form submission error:', error);
                         // Fallback: open mailto link
                         const subject = encodeURIComponent('Contact Form Inquiry');
                         const body = encodeURIComponent(
@@ -727,25 +628,6 @@
                     }
                 });
             }
-
-            // FAQ Toggle Functionality
-            const faqItems = document.querySelectorAll('.faq-item');
-            faqItems.forEach(item => {
-                const button = item.querySelector('.faq-header-btn');
-                if (button) {
-                    button.addEventListener('click', function() {
-                        const isOpen = item.classList.contains('open');
-                        // Close all FAQ items
-                        faqItems.forEach(faqItem => {
-                            faqItem.classList.remove('open');
-                        });
-                        // Open clicked item if it wasn't open
-                        if (!isOpen) {
-                            item.classList.add('open');
-                        }
-                    });
-                }
-            });
         });
     </script>
 </body>
