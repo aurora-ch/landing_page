@@ -1,5 +1,11 @@
 /* Aurora AI - Contact Page Styles */
 
+/* Force most data-anim elements to be visible immediately, BUT allow FAQ content to remain controlled by .open class */
+[data-anim]:not(.faq-content) {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
 /* ===========================================
    CONTACT HERO
    =========================================== */

@@ -296,23 +296,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===========================================
     // FAQ ACCORDION (if on contact page)
     // ===========================================
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-        const headerBtn = item.querySelector('.faq-header-btn');
-        if (headerBtn) {
-            headerBtn.addEventListener('click', () => {
-                const isOpen = item.classList.contains('open');
+    // NOTE: FAQ accordion logic is now in contact/index.html to avoid conflicts
+    // const faqItems = document.querySelectorAll('.faq-item');
+    // faqItems.forEach(item => {
+    //     const headerBtn = item.querySelector('.faq-header-btn');
+    //     if (headerBtn) {
+    //         headerBtn.addEventListener('click', () => {
+    //             const isOpen = item.classList.contains('open');
 
-                // Close all others
-                faqItems.forEach(i => i.classList.remove('open'));
+    //             // Close all others
+    //             faqItems.forEach(i => i.classList.remove('open'));
 
-                // Toggle current
-                if (!isOpen) {
-                    item.classList.add('open');
-                }
-            });
-        }
-    });
+    //             // Toggle current
+    //             if (!isOpen) {
+    //                 item.classList.add('open');
+    //             }
+    //         });
+    //     }
+    // });
 
     // ===========================================
     // DARK MODE DETECTION (for future use)
