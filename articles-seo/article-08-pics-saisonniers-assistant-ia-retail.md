@@ -102,12 +102,12 @@ Pour gérer un pic ×5 de volume :
 
 | Poste | Détail | Coût |
 |-------|--------|------|
-| Abonnement mensuel | Standard | 800 CHF |
-| Surcoût volume pic | +300% appels | 1'200 CHF |
-| Configuration promotions | One-time | 500 CHF |
-| **Total** | | **2'500 CHF** |
+| Abonnement | Flexible | Fixe |
+| Volume pic | Scalable | À l'usage |
+| Configuration | One-time | Inclus/Forfait |
+| **Total** | | **Une fraction du coût humain** |
 
-**Économie : 50'300 CHF** sur une seule période de pics.
+**Économie : Massive** sur une seule période de pics.
 
 ### Comparatif qualité
 
@@ -168,10 +168,10 @@ Retour normal
 Contrairement aux modèles humains où chaque pic = embauche coûteuse, les tarifs IA sont prévisibles :
 
 **Modèle Aurora AI :**
-- Forfait mensuel avec volume inclus
-- Dépassement facturé à l'appel (0.40-0.80 CHF)
+- Forfait mensuel flexible
+- Ajustement automatique selon volume
 - Pas de minimum, pas d'engagement sur les pics
-- Facturation post-consommation
+- Facturation transparente
 
 ---
 
@@ -547,7 +547,7 @@ Oui, l'interface admin permet des modifications en temps réel, reflétées imm�
 Une session de configuration de 1-2 heures suffit généralement. Nous recommandons de le faire 2 semaines avant le pic.
 
 **Y a-t-il un coût supplémentaire pendant les pics ?**
-Oui, le surcoût est proportionnel au volume (environ +0.40-0.80 CHF par appel au-delà du forfait). C'est 20× moins cher qu'un intérimaire.
+Le modèle est flexible : vous ne payez que pour le volume supplémentaire traité. Le coût reste nettement inférieur à l'intérim.
 
 ---
 

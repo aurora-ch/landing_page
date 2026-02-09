@@ -614,7 +614,7 @@ Aurora continue de fonctionner et stocke les données localement. La synchronisa
 Oui, le mapping est entièrement configurable. Vous pouvez aussi créer des champs personnalisés dans votre CRM pour les données spécifiques Aurora.
 
 **Y a-t-il un coût supplémentaire pour l'intégration ?**
-Les intégrations standard (Salesforce, HubSpot, Pipedrive) sont incluses. Les intégrations custom sont facturées selon complexité.
+Nos solutions s'intègrent nativement avec les leaders du marché (Salesforce, HubSpot, Pipedrive). Pour les CRM propriétaires ou spécifiques, nos experts étudient la faisabilité sur mesure.
 
 ---
 

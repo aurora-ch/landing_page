@@ -52,15 +52,15 @@ Client appelle → IA décroche → Répond à la question → Fin
 
 ### Le coût d'opportunité de la sous-utilisation
 
-Si vous payez 800 CHF/mois pour un assistant IA utilisé uniquement pour la réception :
-- Coût par usage : 800 CHF
-- Valeur créée : Économie réception ~2'000 CHF
-- ROI : 150%
+Si vous choisissez un assistant IA uniquement pour la réception :
+- Coût : Abonnement standard
+- Usage : Unique (réception)
+- ROI : Positif
 
-Si vous utilisez les 5 fonctions :
-- Coût par usage : 160 CHF (même abonnement, 5 usages)
-- Valeur créée : ~8'000 CHF (multi-usages)
-- ROI : 900%
+Si vous activez les 5 fonctions :
+- Coût : inchangé ou marginalement supérieur
+- Usage : Multiple (5 leviers de croissance)
+- ROI : **Exponentiel**
 
 **Même investissement, 6× plus de valeur.**
 
@@ -573,12 +573,14 @@ Le même client doit avoir la même expérience :
 
 | Usage | Investissement | Gain estimé/mois | ROI |
 |-------|----------------|------------------|-----|
-| Réception appels | Inclus | 2'000 CHF | - |
-| Qualification leads | +200 CHF | 3'500 CHF | 1650% |
-| Prise de RDV | Inclus | 1'200 CHF | - |
-| Enquêtes satisfaction | +150 CHF | 800 CHF* | 433% |
-| Rappels/Follow-ups | +100 CHF | 2'500 CHF | 2400% |
-| **TOTAL** | **~1'250 CHF** | **~10'000 CHF** | **700%** |
+| Usage | Investissement | Gain estimé/mois | ROI |
+|-------|----------------|------------------|-----|
+| Réception appels | Inclus | Économie de temps | +++ |
+| Qualification leads | Option | Hausse revenus | ++++ |
+| Prise de RDV | Inclus | Remplissage agenda | +++ |
+| Enquêtes satisfaction | Option | Rétention client | +++ |
+| Rappels/Follow-ups | Option | Réactivation | +++++ |
+| **TOTAL** | **Investissement optimisé** | **Croissance globale** | **Maximal** |
 
 *Gains indirects : rétention, amélioration continue
 

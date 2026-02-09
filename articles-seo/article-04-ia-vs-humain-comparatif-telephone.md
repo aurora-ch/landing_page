@@ -66,9 +66,9 @@ L'IA présente un avantage écrasant sur le temps de réponse. Dans un monde où
 ### Impact business
 
 Pour une entreprise recevant 100 appels/jour avec 12% d'abandons :
-- **12 opportunités perdues par jour**
-- ~300 par mois
-- Valeur estimée (si 10% conversion, panier moyen 200 CHF) : **6'000 CHF/mois de manque à gagner**
+- **Plusieurs opportunités perdues par jour**
+- Des dizaines par mois
+- Valeur estimée : **Un manque à gagner considérable**
 
 ---
 
@@ -217,31 +217,29 @@ Un client appelant à 17h45 un vendredi reçoit la même qualité de service qu'
 ### Calcul détaillé
 
 **Coût humain par appel :**
-| Poste | Calcul | Coût |
-|-------|--------|------|
-| Salaire horaire chargé | 35 CHF | - |
-| Durée moyenne appel | 4.2 min | - |
-| Coût direct | 35 × (4.2/60) | 2.45 CHF |
-| Overhead (supervision, espace...) | +30% | 0.74 CHF |
-| **Total par appel** | | **3.19 CHF** |
+| Poste | Coût |
+|-------|------|
+| Salaire horaire chargé | Base marché |
+| Durée moyenne appel | 4.2 min |
+| Overhead (supervision, espace...) | +30% |
+| **Total par appel** | **100% (Base)** |
 
 **Coût IA par appel :**
-| Poste | Calcul | Coût |
-|-------|--------|------|
-| Abonnement mensuel | 800 CHF | - |
-| Volume moyen | 1'500 appels | - |
-| Coût unitaire | 800/1500 | 0.53 CHF |
-| Appels escaladés (15%) × coût humain | 15% × 3.19 | 0.48 CHF |
-| **Total par appel** | | **1.01 CHF** |
+| Poste | Coût |
+|-------|------|
+| Abonnement mensuel | Fixe |
+| Volume moyen | Illimité |
+| Coût unitaire | Minime |
+| **Total par appel** | **~30% de la base** |
 
 ### Économie par volume
 
 | Volume mensuel | Économie mensuelle | Économie annuelle |
 |----------------|-------------------|-------------------|
-| 500 appels | 1'090 CHF | 13'080 CHF |
-| 1'000 appels | 2'180 CHF | 26'160 CHF |
-| 2'500 appels | 5'450 CHF | 65'400 CHF |
-| 5'000 appels | 10'900 CHF | 130'800 CHF |
+| 500 appels | Modérée | Significative |
+| 1'000 appels | Importante | Très importante |
+| 2'500 appels | Conséquente | Majeure |
+| 5'000 appels | Critique | Transformationnelle |
 
 ---
 
@@ -373,7 +371,7 @@ Notre étude de 1'000 appels révèle une vérité nuancée :
 - La rapidité (+96%)
 - La disponibilité (+97%)
 - La constance (+15%)
-- Le coût (-68%)
+- Le coût (Réduction majeure)
 
 **L'humain surpasse l'IA sur :**
 - L'empathie (+30% satisfaction émotionnelle)
@@ -382,7 +380,7 @@ Notre étude de 1'000 appels révèle une vérité nuancée :
 
 **Le modèle hybride optimal :**
 - Satisfaction client : 8.6/10 (vs 7.8 humain seul, 7.4 IA seule)
-- Coût par appel : 1.20 CHF (vs 3.19 humain seul)
+- Coût par appel : Optimisé (vs Élevé pour humain seul)
 - Taux de résolution : 97% (vs 88% humain seul, 85% IA seule)
 
 La question n'est plus "IA ou humain ?" mais "**Comment combiner intelligemment les deux ?**"

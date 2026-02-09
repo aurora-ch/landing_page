@@ -49,8 +49,8 @@ Une analyse de 50'000 appels dans des centres commerciaux suisses révèle cette
 ### L'impact chiffré
 
 Pour un centre recevant 300 appels/jour :
-- 210 appels automatisables × 3 minutes × 0.50 CHF/min = **315 CHF/jour d'économie**
-- Sur un an : **environ 100'000 CHF**
+- La majorité de ces appels peuvent être traités instantanément par l'IA.
+- Sur un an : cela représente **des centaines d'heures de travail économisées**, permettant à votre équipe de se concentrer sur l'accueil physique et l'expérience client.
 
 ---
 
@@ -353,11 +353,11 @@ L'avantage clé : **l'humain qui prend le relais dispose de tout le contexte** c
 |------------|-------|-------|-----------|
 | Appels perdus | 25% | 0% | -100% |
 | Temps attente moyen | 45 sec | 0 sec | -100% |
-| Coût/appel | 2.80 CHF | 0.45 CHF | -84% |
+| Coût/appel | Élevé | Minime | -84% |
 | Satisfaction client | 6.8/10 | 8.5/10 | +25% |
-| Coût annuel RH | 195'000 CHF | 78'000 CHF | -60% |
+| Coût annuel RH | 195'000 CHF | Optimisé | -60% |
 
-**Économie nette annuelle** : 102'000 CHF (après coût de la solution)
+**Économie nette annuelle** : Une réduction drastique des coûts opérationnels tout en augmentant la satisfaction client.
 
 ---
 

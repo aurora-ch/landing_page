@@ -341,10 +341,10 @@ Avant de configurer, analysez vos appels :
 | Secondaire | 1-2 langues | 15-19% des appels |
 | Tertiaire | Illimité | <5% (optionnel) |
 
-**Budget impact :**
-- 2 langues : Inclus dans la plupart des offres
-- 3-4 langues : Souvent inclus ou +10-20%
-- 5+ langues : Sur mesure
+**Flexibilité linguistique :**
+- 2 langues : Standard pour la plupart des entreprises suisses
+- 3-4 langues : Idéal pour une couverture nationale complète
+- 5+ langues : Pour une clientèle internationale diverse
 
 ### Étape 3 : Adaptation du contenu par langue
 
@@ -448,9 +448,9 @@ Ce n'est pas juste de la traduction ! Chaque langue nécessite :
 *Estimation : 5% de leads perdus × valeur moyenne 300 CHF × 1000 contacts
 
 **Coûts de la solution IA multilingue :**
-- Abonnement annuel : 9'600 CHF
-- Configuration langues : 2'000 CHF (one-time)
-- **ROI année 1 : 287%**
+- Une fraction du coût d'un employé multilingue
+- Mise en place rapide et scalable
+- **ROI immédiat grâce aux opportunités capturées**
 
 ### Gains qualitatifs
 

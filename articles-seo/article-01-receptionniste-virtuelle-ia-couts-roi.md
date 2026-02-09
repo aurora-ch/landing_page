@@ -85,22 +85,20 @@ Le marché des assistants vocaux IA propose généralement trois modèles de tar
 - Avantage : Budget prévisible
 - Idéal pour : Entreprises avec volume stable
 
-### Exemple de coûts avec Aurora AI
+### Une tarification adaptée à votre croissance
 
-Prenons un exemple concret avec une PME suisse recevant 500 appels par mois :
+Chez Aurora, nous savons que chaque entreprise est unique. C'est pourquoi nous ne croyons pas aux forfaits rigides, mais plutôt à des solutions qui grandissent avec vous.
 
-| Formule | Coût mensuel | Coût annuel |
-|---------|--------------|-------------|
-| Starter | 390 CHF | 4'680 CHF |
-| Business | 790 CHF | 9'480 CHF |
-| Enterprise | Sur mesure | Variable |
+Nos offres sont conçues pour s'adapter parfaitement à votre volume d'appels et à la complexité de vos besoins, que vous soyez une petite start-up ou une grande structure établie.
 
-Ces tarifs incluent généralement :
-- Disponibilité 24h/24, 7j/7
-- Support multilingue (FR, DE, IT, EN)
-- Intégration CRM basique
-- Rapports et analytics
-- Mises à jour automatiques
+Notre philosophie est simple : vous donner accès à une technologie de pointe qui s'intègre naturellement à votre écosystème, sans coûts cachés ni surprises.
+
+**Nos solutions incluent généralement :**
+- Disponibilité totale 24/7
+- Support multilingue natif (FR, DE, IT, EN)
+- Intégration fluide avec vos outils (CRM, Agenda)
+- Rapports et analytics détaillés
+- Mises à jour continues
 
 ### Les coûts d'implémentation
 
@@ -119,7 +117,7 @@ Voici un tableau comparatif complet pour une PME suisse :
 
 | Critère | Réceptionniste humaine | Réceptionniste IA |
 |---------|----------------------|-------------------|
-| Coût annuel | 80'000-95'000 CHF | 5'000-15'000 CHF |
+| Coût annuel | 80'000-95'000 CHF | Une fraction de ce coût |
 | Disponibilité | 42h/semaine | 24/7/365 |
 | Langues | 1-2 (natif) | 4+ simultanément |
 | Temps de réponse | Variable | < 1 seconde |
@@ -132,36 +130,22 @@ Voici un tableau comparatif complet pour une PME suisse :
 
 ### L'économie réelle
 
-Pour une PME avec 500 appels/mois :
+L'écart est saisissant. En optant pour une solution IA comme Aurora, vous ne faites pas seulement des économies substantielles sur les frais de personnel ; vous investissez dans une ressource inépuisable.
 
-**Scénario humain** : 85'000 CHF/an
-**Scénario IA** : 9'500 CHF/an
-**Économie annuelle** : **75'500 CHF**
-
-Cette économie peut être réinvestie dans :
-- Des postes à plus forte valeur ajoutée
-- Le développement commercial
-- L'amélioration du service client pour les cas complexes
+Imaginez ce que vous pourriez faire avec le budget libéré :
+- Renforcer votre équipe sur des tâches à haute valeur ajoutée.
+- Investir dans le développement commercial.
+- Améliorer l'expérience client là où l'humain est irremplaçable.
 
 ---
 
-## Calcul du ROI sur 12, 24 et 36 mois
+## Un retour sur investissement qui parle de lui-même
 
-### Formule de calcul du ROI
+Le ROI d'une solution comme Aurora ne se mesure pas uniquement en francs, mais aussi en sérénité et en satisfaction client. Cependant, les chiffres restent éloquents.
 
-```
-ROI = (Économies réalisées - Coût de la solution IA) / Coût de la solution IA × 100
-```
+Dès la première année, l'économie réalisée par rapport à un poste traditionnel est massive. Et cet avantage se cumule année après année, vous permettant de dégager une marge de manœuvre financière inédite pour votre PME.
 
-### Projection sur 3 ans
-
-| Période | Coûts humain cumulés | Coûts IA cumulés | Économie cumulée | ROI |
-|---------|---------------------|------------------|------------------|-----|
-| 12 mois | 85'000 CHF | 11'500 CHF* | 73'500 CHF | 639% |
-| 24 mois | 170'000 CHF | 21'000 CHF | 149'000 CHF | 710% |
-| 36 mois | 255'000 CHF | 30'500 CHF | 224'500 CHF | 736% |
-
-*Inclut setup initial de 2'000 CHF
+Plus qu'une simple réduction de coûts, c'est un véritable levier de croissance qui se met en place dès le premier jour d'activation.
 
 ### Les gains non quantifiables
 
@@ -276,7 +260,7 @@ Avant de comparer les offres, analysez :
 
 ## Conclusion : L'IA, un investissement rentable pour les PME suisses
 
-Le calcul est désormais clair : **une réceptionniste virtuelle IA permet aux PME suisses d'économiser 60'000 à 80'000 CHF par an** tout en améliorant leur qualité de service.
+Le constat est clair : **une réceptionniste virtuelle IA permet aux PME suisses de réaliser des économies majeures** tout en offrant une disponibilité et une qualité de service irréprochables.
 
 Ce n'est pas une question de remplacer l'humain, mais de **l'augmenter**. Les collaborateurs libérés des tâches répétitives peuvent se concentrer sur des interactions à plus forte valeur ajoutée : conseil personnalisé, gestion des cas complexes, relation client premium.
 
@@ -295,7 +279,7 @@ En 2 minutes, obtenez une estimation basée sur votre volume d'appels, votre sec
 ## FAQ : Réceptionniste virtuelle IA et coûts
 
 **Combien coûte une réceptionniste virtuelle IA en Suisse ?**
-Les tarifs varient de 200 à 1'500 CHF par mois selon les fonctionnalités et le volume d'appels. Pour une PME standard, comptez environ 500-800 CHF mensuels.
+Les tarifs sont nettement inférieurs à ceux d'un poste traditionnel. Chez Aurora, nous proposons des offres flexibles adaptées à la taille de votre entreprise et à votre volume d'appels, assurant un ROI rapide.
 
 **L'IA peut-elle vraiment remplacer une réceptionniste humaine ?**
 Pour 70-80% des appels standards (informations, rendez-vous, FAQ), l'IA est aussi efficace qu'un humain. Les cas complexes sont automatiquement transférés à un collaborateur.
