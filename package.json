@@ -13,5 +13,8 @@
     "enterprise"
   ],
   "author": "Aurora",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.9.0"
+  }
 }
